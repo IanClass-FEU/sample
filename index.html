@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="card">
+                <div class="card" onclick="showPopup('GABEL LOFFEL', '235 GLENDALE AVE. MERIDEEN CITY', 'Swiss', '10AM to 10PM', '$$$', 'Traditional homemade meals with a touch of love.', './assets/img/gabel.png')">
                     <div class="card-title-box">GABEL LOFFEL</div>
                     <img src="./assets/img/gabel.png" class="card-img-top" alt="Gabel Loffel">
                     <div class="hover-text">
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card" onclick="showPopup('GARY GARI', '12 BROADWAY ST. MERIDEEN CITY', 'Steakhouse', '11AM to 11PM', '$$$$', 'Exotic drinks and gourmet steak platters.', './assets/img/gary.png')">
                     <div class="card-title-box">GARY GARI</div>
                     <img src="./assets/img/gary.png" class="card-img-top" alt="Gary Gari">
                     <div class="hover-text">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card" onclick="showPopup('IL PIATO', '99 CENTRAL AVE. MERIDEEN CITY', 'Italian', '9AM to 9PM', '$$', 'Got wild finicky kids? Head for Il Piato for kid-friendly Italian fun!', './assets/img/piato.png')">
                     <div class="card-title-box">IL PIATO</div>
                     <img src="./assets/img/piato.png" class="card-img-top" alt="Il Piato">
                     <div class="hover-text">
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card" onclick="showPopup('PIERRE PLATTERS', '44 MARINA BLVD. MERIDEEN CITY', 'Seafood', '12PM to 10PM', '$$$', 'Seafood and steak with a modern twist.', './assets/img/pierre.png')">
                     <div class="card-title-box">PIERRE PLATTERS</div>
                     <img src="./assets/img/pierre.png" class="card-img-top" alt="Pierre Platters">
                     <div class="hover-text">
@@ -60,7 +60,12 @@
 
     <div id="popup" class="popup">
         <div class="popup-content">
+            <img id="popup-image" src="" alt="Restaurant Image">
             <h2 id="popup-title"></h2>
+            <p id="popup-address"></p>
+            <p><strong>Category:</strong> <span id="popup-category"></span></p>
+            <p><strong>Open:</strong> <span id="popup-time"></span></p>
+            <p><strong>Price:</strong> <span id="popup-price"></span></p>
             <p id="popup-description"></p>
         </div>
     </div>

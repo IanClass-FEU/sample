@@ -1,21 +1,16 @@
-function showPopup(restaurant) {
-    const popup = document.getElementById("popup");
-    const title = document.getElementById("popup-title");
-    const description = document.getElementById("popup-description");
-
-    const data = {
-        gabel: "Traditional homemade meals with a touch of love.",
-        gary: "Exotic drinks and gourmet steak platters.",
-        piato: "Delicious grilled meats with unique seasoning.",
-        pierre: "Seafood and steak with a modern twist."
-    };
-
-    title.textContent = restaurant.toUpperCase();
-    description.textContent = data[restaurant];
-
-    popup.style.display = "flex";
+function showPopup(name, address, category, time, price, description, image) {
+    document.getElementById('popup-title').innerText = name;
+    document.getElementById('popup-address').innerText = address;
+    document.getElementById('popup-category').innerText = category;
+    document.getElementById('popup-time').innerText = time;
+    document.getElementById('popup-price').innerText = price;
+    document.getElementById('popup-description').innerText = description;
+    document.getElementById('popup-image').src = image;
+    
+    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('main-menu').style.zIndex = '3000';
 }
 
 function hidePopup() {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById('popup').style.display = 'none';
 }
